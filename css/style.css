@@ -1,1 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
 
+  /********
+   .card{
+    width: 300px;
+    
+  }**********/
+ 
+
+  .btn-outline-danger{
+    color: #2e5083 !important;
+    border-color:  #2e5083 !important ;
+    border-radius: 0rem !important;
+    border-width: 1.8px !important;
+    
+}
+
+
+.btn-outline-danger:hover{
+    background-color: #2e5083  !important;
+    border-color: #2e5083 !important;
+    border-radius: 0rem !important;
+    color: #ffffff !important;
+}
+ .card .card-body #btn1{
+    font-size: 0.7rem !important;
+    font-weight: bold !important;
+    padding: .320rem .20rem !important;
+    margin-right: 0.2rem !important;
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+    
+ }
+ .card-img-top{
+    height: 100px !important;
+    
+}
+.card-text{
+    color: #e97923 !important;
+    font-size: 0.7rem !important;
+    padding-top: 0px !important;
+    
+}
+.card-title{
+    color: #2e5083;
+    font-size: 0.8rem !important;
+    padding-top: 10px !important;
+    padding-bottom: 0px !important;
+}
+#topNavBar .navbar-nav a{
+  color: #e97923 !important;
+  padding-left: 70px !important;
+}
+#topNavBar ul li:last-child{
+  padding-right: 70px !important;
+}
+
+
+
+#topNavBar .navbar-nav  a::after{
+  background: #e97923 !important;
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  transition-delay: var(--offcanvas-width) .15s;
+
+}
+#topNavBar .navbar-nav  a:hover::after{
+   width: 70%;
+   transition-delay: var(--offcanvas-width) .15s;
+}
+
+#sidebar .navbar-nav a{
+  color: #ffffff !important;
+  padding: 0px !important;
+  padding-left: 30px !important;
+}
+#sidebar .navbar-nav a:hover{
+  background: #e97923;
+ transform: scale(1.2);
+ box-shadow: 2px 2px 2px #000;
+
+}
+.card-body{
+  padding-top: 0 !important;
+  padding-left: 0.3rem !important;
+}
+h2{
+  font-size: 1.2rem;
+  color: #e97923;
+  text-align: center;
+  
+
+}
+h2:after{
+  background: #e97923 !important;
+  content: '';
+  display: block;
+  width: 8%;
+  height: 2px;
+  margin-top: 15px;
+  margin-left: 450px !important;
+}
+}
