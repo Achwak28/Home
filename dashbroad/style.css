@@ -1,0 +1,113 @@
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pappins', sans-serif;  
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/*************************** SIDE BAR ******************************* */
+
+
+.contain{
+    position: relative;
+    width: 100%;
+}
+.navigation{
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    background: #2e5083;
+    transition: 0.5s;
+    overflow : hidden;
+}
+.navigation.active{
+    width: 60px;
+
+
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+   
+    
+}
+.navigation ul li:nth-child(1){  border: none;}
+.navigation ul li:nth-child(7){  border: none;}
+.navigation ul li:hover{
+    background: #ffffff;
+    
+}
+.navigation ul li a:hover{
+    color: #2e5083;
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+   
+}
+
+
+.navigation ul li:nth-child(1):hover{
+background: transparent;
+
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fab{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+  
+
+
